@@ -36,18 +36,17 @@ public class DesafioAula01 {
 
             int rating = Math.round(Float.parseFloat(filme.get("imDbRating")));
 
-            for (int i = 0; i < rating; i++) {
-            }
-            System.out.print("\u2B50");
+            for (int i = 0; i < rating; i++)
+                System.out.print("\u2B50");
 
             if (rating < 8)
-                System.out.print(" " + "\uD83D\uDE10");
+                System.out.print(" \uD83D\uDE10");
             else if (rating >= 8 && rating < 9)
-                System.out.print(" " + "\uD83D\uDE42");
+                System.out.print(" \uD83D\uDE42");
             else if (rating >= 9 && rating <= 10)
-                System.out.print(" " + "\uD83D\uDE04");
+                System.out.print(" \uD83D\uDE04");
             else
-                System.out.print(" " + "\uD83D\uDE21");
+                System.out.print(" \uD83D\uDE21");
 
             System.out.println("\n");
         }
